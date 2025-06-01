@@ -31,6 +31,12 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta name="apple-mobile-web-app-title" content="JustFossa" />
 				<meta name="application-name" content="JustFossa" />
 				<link rel="icon" href="/favicon.ico" />
+				<script
+  defer
+  data-website-id="6834bd1a6dfc89393bc5146b"
+  data-domain="justfossa.lol"
+  src="https://datafa.st/js/script.js">
+</script>
 			</Head>
 			<main>
 				<div className="min-h-screen w-full  dark:bg-black flex flex-col items-center">
