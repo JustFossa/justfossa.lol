@@ -82,14 +82,16 @@ export default function ExpertiseSection() {
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8 }}
 					viewport={{ once: true }}
-					className="text-center mb-16"
+					className="text-center mb-12 mobile:mb-16"
 				>
-					<h2 className="text-3xl md:text-4xl font-bold mb-4">Speciality</h2>
-					<p className="text-xl text-primary-muted">Areas of Expertise</p>
+					<h2 className="text-responsive-xl font-bold mb-4">Speciality</h2>
+					<p className="text-responsive-lg text-primary-muted">
+						Areas of Expertise
+					</p>
 				</motion.div>
 
 				{/* Expertise Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div className="grid-responsive-1-2-3 gap-responsive">
 					{expertiseAreas.map((area, index) => (
 						<motion.div
 							key={area.title}
@@ -99,19 +101,19 @@ export default function ExpertiseSection() {
 							viewport={{ once: true }}
 							className="group"
 						>
-							<div className="bg-primary-card p-8 rounded-2xl card-hover h-full">
+							<div className="bg-primary-card p-6 mobile:p-8 rounded-2xl card-hover h-full">
 								{/* Icon */}
-								<div className="w-16 h-16 bg-primary-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-accent/20 transition-colors duration-300">
-									<area.icon className="w-8 h-8 text-primary-accent" />
+								<div className="w-12 h-12 mobile:w-16 mobile:h-16 bg-primary-accent/10 rounded-xl flex items-center justify-center mb-4 mobile:mb-6 group-hover:bg-primary-accent/20 transition-colors duration-300">
+									<area.icon className="w-6 h-6 mobile:w-8 mobile:h-8 text-primary-accent" />
 								</div>
 
 								{/* Title */}
-								<h3 className="text-2xl font-bold text-primary-text mb-4">
+								<h3 className="text-responsive-lg font-bold text-primary-text mb-4">
 									{area.title}
 								</h3>
 
 								{/* Description */}
-								<p className="text-primary-muted mb-6 leading-relaxed">
+								<p className="text-responsive-sm text-primary-muted mb-4 mobile:mb-6 leading-relaxed">
 									{area.description}
 								</p>
 
@@ -120,7 +122,7 @@ export default function ExpertiseSection() {
 									{area.skills.slice(0, 8).map((skill) => (
 										<div
 											key={skill}
-											className="text-sm text-primary-muted bg-primary-background/50 px-3 py-1 rounded-md"
+											className="text-xs mobile:text-sm text-primary-muted bg-primary-background/50 px-2 mobile:px-3 py-1 rounded-md"
 										>
 											{skill}
 										</div>

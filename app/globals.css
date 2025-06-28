@@ -63,11 +63,11 @@
 
 @layer components {
 	.container-custom {
-		@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+		@apply max-w-7xl mx-auto px-4 mobile:px-4 tablet:px-6 desktop:px-8 wide:px-8;
 	}
 
 	.section-padding {
-		@apply py-16 md:py-24;
+		@apply py-12 mobile:py-12 tablet:py-16 desktop:py-20 wide:py-24;
 	}
 
 	.text-gradient {
@@ -91,10 +91,111 @@
 	}
 
 	.button-primary {
-		@apply bg-primary-accent text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-glow;
+		@apply bg-primary-accent text-white px-4 py-3 mobile:px-6 mobile:py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-glow text-sm mobile:text-base;
 	}
 
 	.button-secondary {
-		@apply border border-primary-border text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary-accent hover:border-primary-accent;
+		@apply border border-primary-border text-white px-4 py-3 mobile:px-6 mobile:py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary-accent hover:border-primary-accent text-sm mobile:text-base;
+	}
+
+	/* Responsive text sizing utilities */
+	.text-responsive-xs {
+		@apply text-xs mobile:text-sm tablet:text-base;
+	}
+
+	.text-responsive-sm {
+		@apply text-sm mobile:text-base tablet:text-lg;
+	}
+
+	.text-responsive-base {
+		@apply text-base mobile:text-lg tablet:text-xl;
+	}
+
+	.text-responsive-lg {
+		@apply text-lg mobile:text-xl tablet:text-2xl;
+	}
+
+	.text-responsive-xl {
+		@apply text-xl mobile:text-2xl tablet:text-3xl desktop:text-4xl;
+	}
+
+	.text-responsive-2xl {
+		@apply text-2xl mobile:text-3xl tablet:text-4xl desktop:text-5xl;
+	}
+
+	.text-responsive-3xl {
+		@apply text-3xl mobile:text-4xl tablet:text-5xl desktop:text-6xl wide:text-7xl;
+	}
+
+	/* Responsive grid utilities */
+	.grid-responsive-1-2 {
+		@apply grid grid-cols-1 tablet:grid-cols-2;
+	}
+
+	.grid-responsive-1-2-3 {
+		@apply grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3;
+	}
+
+	.grid-responsive-1-2-4 {
+		@apply grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4;
+	}
+
+	/* Responsive spacing utilities */
+	.gap-responsive {
+		@apply gap-4 mobile:gap-6 tablet:gap-8 desktop:gap-12;
+	}
+
+	.gap-responsive-sm {
+		@apply gap-2 mobile:gap-3 tablet:gap-4 desktop:gap-6;
+	}
+
+	/* Mobile navigation helpers */
+	.mobile-menu-overlay {
+		@apply fixed inset-0 bg-black/50 z-40 tablet:hidden;
+	}
+
+	.mobile-menu-panel {
+		@apply fixed top-0 right-0 h-full w-64 bg-primary-background border-l border-primary-border z-50 tablet:hidden;
+	}
+
+	/* Touch-friendly improvements */
+	.touch-target {
+		@apply min-h-11 min-w-11;
+	}
+
+	/* Responsive images */
+	.responsive-image {
+		@apply w-full h-auto;
+	}
+
+	/* Prevent horizontal scroll on mobile */
+	.overflow-fix {
+		@apply overflow-x-hidden;
+	}
+
+	/* Mobile-first animations */
+	@media (prefers-reduced-motion: reduce) {
+		.marquee-content {
+			animation: none;
+		}
+
+		.card-hover {
+			transition: none;
+		}
+
+		.glitch-text {
+			animation: none;
+		}
+	}
+
+	/* High contrast mode support */
+	@media (prefers-contrast: high) {
+		.text-primary-muted {
+			@apply text-primary-text;
+		}
+
+		.bg-primary-card {
+			@apply border border-primary-border;
+		}
 	}
 }

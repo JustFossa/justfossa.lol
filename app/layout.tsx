@@ -5,6 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://justfossa.lol"),
 	title: "JustFossa - Software Engineer & Developer",
 	description:
 		"Self-taught software engineer from the Czech Republic. Passionate about full-stack web development, creating stunning user experiences, and building scalable infrastructure.",

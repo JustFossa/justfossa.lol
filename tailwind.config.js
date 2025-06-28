@@ -15,6 +15,18 @@ module.exports = {
 				"2xl": "1400px",
 			},
 		},
+		screens: {
+			mobile: "320px",
+			tablet: "768px",
+			desktop: "1024px",
+			wide: "1200px",
+			// Keep existing Tailwind breakpoints for compatibility
+			sm: "640px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1280px",
+			"2xl": "1536px",
+		},
 		extend: {
 			colors: {
 				border: "hsl(var(--border))",
@@ -108,6 +120,10 @@ module.exports = {
 			},
 			boxShadow: {
 				glow: "0 0 20px rgba(255, 107, 53, 0.3)",
+				"glow-sm": "0 0 10px rgba(255, 107, 53, 0.2)",
+			},
+			backdropBlur: {
+				xs: "2px",
 			},
 			keyframes: {
 				"accordion-down": {

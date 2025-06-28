@@ -7,7 +7,7 @@ import TestimonialsSection from "@/components/testimonials-section";
 
 export default function HomePage() {
 	return (
-		<main className="min-h-screen bg-primary-background">
+		<main className="min-h-screen bg-primary-background overflow-x-hidden">
 			<Navigation />
 			<HeroSection />
 			<AboutSection />

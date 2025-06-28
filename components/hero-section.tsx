@@ -26,22 +26,22 @@ const socialLinks = [
 
 export default function HeroSection() {
 	return (
-		<section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+		<section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-14 mobile:pt-16 tablet:pt-20">
 			<div className="container-custom">
-				<div className="grid lg:grid-cols-2 gap-12 items-center">
+				<div className="grid grid-cols-1 desktop:grid-cols-2 gap-8 mobile:gap-12 desktop:gap-16 items-center">
 					{/* Left Content */}
 					<motion.div
 						initial={{ opacity: 0, x: -50 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8 }}
-						className="space-y-8"
+						className="space-y-6 mobile:space-y-8 order-2 desktop:order-1"
 					>
 						{/* Main Headline */}
 						<motion.h1
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.4 }}
-							className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight"
+							className="text-responsive-3xl font-bold leading-tight"
 						>
 							Crafting purpose driven experiences that{" "}
 							<span className="text-gradient">inspire & engage</span>
@@ -52,7 +52,7 @@ export default function HeroSection() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.6 }}
-							className="text-lg md:text-xl text-primary-muted max-w-2xl"
+							className="text-responsive-base text-primary-muted max-w-2xl"
 						>
 							I'm a self-taught software engineer from the Czech Republic. I'm
 							currently pursuing full-stack web development to create stunning
@@ -65,7 +65,7 @@ export default function HeroSection() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.8 }}
-							className="flex flex-col sm:flex-row gap-4"
+							className="flex flex-col mobile:flex-row gap-4"
 						>
 							<Link
 								href="/projects"
@@ -86,7 +86,7 @@ export default function HeroSection() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 1 }}
-							className="flex items-center space-x-4"
+							className="flex items-center justify-center mobile:justify-start space-x-4"
 						>
 							{socialLinks.map((social) => (
 								<Link
@@ -108,14 +108,14 @@ export default function HeroSection() {
 						initial={{ opacity: 0, x: 50 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}
-						className="relative"
+						className="relative order-1 desktop:order-2"
 					>
 						<div className="marquee-container">
 							<div className="marquee-content flex space-x-8">
 								{[...skillsMarquee, ...skillsMarquee].map((skill, index) => (
 									<span
 										key={index}
-										className="text-2xl md:text-3xl font-bold text-primary-muted whitespace-nowrap"
+										className="text-xl mobile:text-2xl tablet:text-3xl font-bold text-primary-muted whitespace-nowrap"
 									>
 										{skill}
 									</span>
@@ -128,8 +128,8 @@ export default function HeroSection() {
 
 			{/* Background Elements */}
 			<div className="absolute inset-0 -z-10">
-				<div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-accent/10 rounded-full blur-3xl"></div>
-				<div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-accent/5 rounded-full blur-3xl"></div>
+				<div className="absolute top-1/4 left-1/4 w-32 h-32 mobile:w-64 mobile:h-64 bg-primary-accent/10 rounded-full blur-3xl"></div>
+				<div className="absolute bottom-1/4 right-1/4 w-48 h-48 mobile:w-96 mobile:h-96 bg-primary-accent/5 rounded-full blur-3xl"></div>
 			</div>
 		</section>
 	);

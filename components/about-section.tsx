@@ -9,21 +9,21 @@ export default function AboutSection() {
 	return (
 		<section className="section-padding relative">
 			<div className="container-custom">
-				<div className="grid lg:grid-cols-2 gap-12 items-center">
+				<div className="grid-responsive-1-2 gap-responsive items-center">
 					{/* Left Content */}
 					<motion.div
 						initial={{ opacity: 0, x: -50 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8 }}
 						viewport={{ once: true }}
-						className="space-y-8"
+						className="space-y-6 mobile:space-y-8"
 					>
 						<motion.h2
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.2 }}
 							viewport={{ once: true }}
-							className="text-3xl md:text-4xl font-bold"
+							className="text-responsive-xl font-bold"
 						>
 							About Me
 						</motion.h2>
@@ -35,7 +35,7 @@ export default function AboutSection() {
 							viewport={{ once: true }}
 							className="space-y-4"
 						>
-							<p className="text-lg text-primary-muted leading-relaxed">
+							<p className="text-responsive-base text-primary-muted leading-relaxed">
 								{glitchedText.split("").map((char, index) => (
 									<span
 										key={index}

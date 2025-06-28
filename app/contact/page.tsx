@@ -80,7 +80,7 @@ export default function ContactPage() {
 			<Navigation />
 
 			{/* Hero Header */}
-			<section className="pt-32 pb-16">
+			<section className="pt-20 mobile:pt-24 tablet:pt-32 pb-12 mobile:pb-16">
 				<div className="container-custom">
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
@@ -88,10 +88,12 @@ export default function ContactPage() {
 						transition={{ duration: 0.8 }}
 						className="text-center max-w-4xl mx-auto"
 					>
-						<h1 className="text-4xl md:text-6xl font-bold mb-6">
+						<h1 className="text-responsive-3xl font-bold mb-4 mobile:mb-6">
 							Let's create your next big idea
 						</h1>
-						<p className="text-xl text-primary-muted">Available for work</p>
+						<p className="text-responsive-lg text-primary-muted">
+							Available for work
+						</p>
 					</motion.div>
 				</div>
 			</section>
@@ -99,24 +101,29 @@ export default function ContactPage() {
 			{/* Contact Content */}
 			<section className="section-padding pt-0">
 				<div className="container-custom">
-					<div className="grid lg:grid-cols-2 gap-12">
+					<div className="grid-responsive-1-2 gap-responsive">
 						{/* Contact Form */}
 						<motion.div
 							initial={{ opacity: 0, x: -50 }}
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.8 }}
-							className="space-y-8"
+							className="space-y-6 mobile:space-y-8"
 						>
 							<div>
-								<h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-								<p className="text-primary-muted">
+								<h2 className="text-responsive-xl font-bold mb-4">
+									Get in Touch
+								</h2>
+								<p className="text-responsive-base text-primary-muted">
 									I'm always open to discussing new projects, creative ideas, or
 									opportunities to be part of your visions.
 								</p>
 							</div>
 
-							<form onSubmit={handleSubmit} className="space-y-6">
-								<div className="grid md:grid-cols-2 gap-6">
+							<form
+								onSubmit={handleSubmit}
+								className="space-y-4 mobile:space-y-6"
+							>
+								<div className="grid mobile:grid-cols-2 gap-4 mobile:gap-6">
 									<div>
 										<label
 											htmlFor="name"

@@ -11,7 +11,7 @@ export default function ProjectsPage() {
 			<Navigation />
 
 			{/* Hero Header */}
-			<section className="pt-32 pb-16">
+			<section className="pt-20 mobile:pt-24 tablet:pt-32 pb-12 mobile:pb-16">
 				<div className="container-custom">
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
@@ -19,8 +19,10 @@ export default function ProjectsPage() {
 						transition={{ duration: 0.8 }}
 						className="text-center max-w-4xl mx-auto"
 					>
-						<h1 className="text-4xl md:text-6xl font-bold mb-6">My Work</h1>
-						<p className="text-xl text-primary-muted">
+						<h1 className="text-responsive-3xl font-bold mb-4 mobile:mb-6">
+							My Work
+						</h1>
+						<p className="text-responsive-lg text-primary-muted">
 							Creating next level digital products
 						</p>
 					</motion.div>
@@ -30,7 +32,7 @@ export default function ProjectsPage() {
 			{/* Projects Grid */}
 			<section className="section-padding pt-0">
 				<div className="container-custom">
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div className="grid-responsive-1-2-3 gap-responsive">
 						{projects.map((project, index) => (
 							<ProjectCard key={project.name} project={project} index={index} />
 						))}

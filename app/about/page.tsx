@@ -5,7 +5,9 @@ export default function AboutPage() {
 	return (
 		<main className="min-h-screen bg-primary-background">
 			<Navigation />
-			<AboutContent />
+			<div className="pt-14 mobile:pt-16 tablet:pt-20">
+				<AboutContent />
+			</div>
 		</main>
 	);
 }

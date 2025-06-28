@@ -43,13 +43,13 @@ export function ProjectCard({
 						/>
 						<div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 					</div>
-					<div className="p-6">
+					<div className="p-4 mobile:p-6">
 						<div className="flex items-center justify-between mb-2">
-							<h3 className="text-xl font-semibold text-primary-text">
+							<h3 className="text-responsive-sm font-semibold text-primary-text">
 								{project.name}
 							</h3>
 						</div>
-						<div className="flex flex-wrap gap-2 mb-2">
+						<div className="flex flex-wrap gap-1 mobile:gap-2 mb-2">
 							{project.tags.map((tag) => (
 								<span
 									key={tag}
