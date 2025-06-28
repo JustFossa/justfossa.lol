@@ -6,6 +6,12 @@ import { Clock, Award, Users, Code, Palette, Zap } from "lucide-react";
 const workHistory = [
 	{
 		period: "2025 - Present",
+		title: "Founder & Lead Developer",
+		company: "Asunalabs",
+		description: "Founded and lead a software development company specializing in modern web applications and digital solutions. Responsible for project architecture, client relations, and technical leadership"
+	},
+	{
+		period: "2025 - Present",
 		title: "Junior Developer",
 		company: "Ideacomp s.r.o",
 		description:
