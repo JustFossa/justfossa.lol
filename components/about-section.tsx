@@ -36,17 +36,7 @@ export default function AboutSection() {
 							className="space-y-4"
 						>
 							<p className="text-responsive-base text-primary-muted leading-relaxed">
-								{glitchedText.split("").map((char, index) => (
-									<span
-										key={index}
-										className="inline-block hover:animate-glitch"
-										style={{
-											animationDelay: `${index * 0.01}s`,
-										}}
-									>
-										{char}
-									</span>
-								))}
+								{glitchedText}
 							</p>
 						</motion.div>
 
