@@ -17,7 +17,7 @@ const skillsMarquee = [
 const socialLinks = [
 	{
 		icon: Twitter,
-		href: "https://x.com/JustFossa",
+		href: "https://x.com/Just_Fossa",
 		label: "X",
 	},
 	{ icon: Github, href: "https://github.com/justfossa", label: "GitHub" },
