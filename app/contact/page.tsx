@@ -48,7 +48,7 @@ const socialLinks = [
 	{
 		icon: Instagram,
 		title: "Instagram",
-		href: "https://instagram.com/justfossa",
+		href: "https://instagram.com/marekk.panko",
 	},
 ];
 
