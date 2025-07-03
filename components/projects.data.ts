@@ -8,6 +8,12 @@ export const projects: Project[] = [
 		tags: ["Next.js", "Typescript", "Express.js", "Postgres"],
 	},
 	{
+		name: "Asuna Labs",
+		repoUrl: "https://github.com/AsunaLabs",
+		cover: "/images/asuna.png",
+		tags: ["Next.js", "Typescript", "Framer-motion", "Tailwind"]
+	},
+	{
 		name: "IP Tools",
 		repoUrl: "https://github.com/JustFossa/iptools",
 		cover: "/images/iptools.png",
