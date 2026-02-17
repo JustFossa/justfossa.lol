@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +45,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className="dark">
+			<Script
+			  defer
+			  data-website-id="dfid_w52R1JozHkEdW2nYBbA6v"
+			  data-domain="justfossa.app"
+			  data-allow-localhost="true"
+			  src="https://datafa.st/js/script.js">
+			</Script>
 			<body
 				className={`${inter.className} bg-primary-background text-primary-text antialiased`}
 			>
