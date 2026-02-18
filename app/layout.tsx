@@ -50,6 +50,7 @@ export default function RootLayout({
 			  data-website-id="dfid_w52R1JozHkEdW2nYBbA6v"
 			  data-domain="justfossa.app"
 			  data-allow-localhost="true"
+          	  strategy="afterInteractive"
 			  src="https://datafa.st/js/script.js">
 			</Script>
 			<body
