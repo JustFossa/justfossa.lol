@@ -50,6 +50,7 @@ export default function RootLayout({
 					defer
 					data-website-id="dfid_w52R1JozHkEdW2nYBbA6v"
 					data-domain="justfossa.app"
+					data-api-url="https://datafa.st/api/events"
 					strategy="afterInteractive"
 					src="/datafast.js"
 				/>
