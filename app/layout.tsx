@@ -45,20 +45,18 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className="dark">
-			<head>
-				<Script
-				  defer
-				  data-website-id="dfid_w52R1JozHkEdW2nYBbA6v"
-				  data-domain="justfossa.app"
-				  data-allow-localhost="true"
-	          	  strategy="afterInteractive"
-				  src="https://datafa.st/js/script.js">
-				</Script>
-			</head>
 			<body
 				className={`${inter.className} bg-primary-background text-primary-text antialiased`}
 			>
 				{children}
+				<Script
+					defer
+					data-website-id="dfid_w52R1JozHkEdW2nYBbA6v"
+					data-domain="justfossa.app"
+					data-allow-localhost="true"
+					strategy="afterInteractive"
+					src="https://datafa.st/js/script.js"
+				/>
 			</body>
 		</html>
 	);
