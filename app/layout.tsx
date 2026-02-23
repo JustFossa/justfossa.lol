@@ -46,14 +46,12 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="dark">
 			<head>
-			<Script
-					defer
-					data-website-id="dfid_w52R1JozHkEdW2nYBbA6v"
-					data-domain="justfossa.app"
-					data-api-url="/api/events"
-					strategy="afterInteractive"
-					src="/datafast.js"
-				/>
+			 <Script
+	          data-site-id="a0TqGZUrQclWDZGZ"
+	          data-domain="justfossa.app"
+	          src="https://cdn.engagetrack.net/sdk.js"
+	          strategy="afterInteractive"
+	        />
 			</head>
 			<body
 				className={`${inter.className} bg-primary-background text-primary-text antialiased`}
