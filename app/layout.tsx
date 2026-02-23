@@ -6,7 +6,7 @@ import Script from "next/script"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://justfossa.lol"),
+	metadataBase: new URL("https://justfossa.app"),
 	title: "JustFossa - Software Engineer & Developer",
 	description:
 		"Self-taught software engineer from the Czech Republic. Passionate about full-stack web development, creating stunning user experiences, and building scalable infrastructure.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://justfossa.lol",
+		url: "https://justfossa.app",
 		title: "JustFossa - Software Engineer & Developer",
 		description:
 			"Self-taught software engineer from the Czech Republic. Passionate about full-stack web development.",
